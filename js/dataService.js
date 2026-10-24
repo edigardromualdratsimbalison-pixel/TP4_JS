@@ -1,3 +1,4 @@
+// dataService.js : charge les fichiers JSON. Aucune manipulation du DOM ici.
 async function chargerJson(chemin) {
   const response = await fetch(chemin);
   if (!response.ok) {
@@ -9,7 +10,7 @@ async function chargerJson(chemin) {
   }
   return data;
 }
- 
+
 export async function loadAllData() {
   try {
     const customers = await chargerJson("data/customers.json");
