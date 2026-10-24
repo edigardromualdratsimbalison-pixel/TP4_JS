@@ -1,0 +1,182 @@
+:root {
+  --ink: #17223b;
+  --muted: #5d6b82;
+  --accent: #0f5c63;
+  --accent-soft: #e2f0f1;
+  --line: #d9e0e8;
+  --paper: #eef2f6;
+}
+body { 
+    background: var(--paper); 
+    color: var(--ink); 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* En-tête */
+.site-header { 
+    background: var(--ink); 
+    color: #fff; 
+    padding: 2rem 0 3.25rem; 
+}
+.page-title { 
+    font-size: clamp(1.6rem, 4vw, 2.3rem); 
+    font-weight: 800; 
+    letter-spacing: -0.02em; 
+    margin: 0; 
+}
+.main-wrap { 
+    flex: 1; 
+    margin-top: -1.75rem; 
+    padding-bottom: 2rem; 
+}
+
+/* Indicateurs : le montant cumulé est mis en avant */
+.indicator { 
+    background: #fff; 
+    border: 1px solid var(--line); 
+    border-radius: 10px; 
+    padding: 1rem 1.1rem; 
+    height: 100%; 
+}
+.indicator-value { 
+    font-size: 1.6rem; 
+    font-weight: 800; 
+    line-height: 1.15; 
+}
+.indicator-label { 
+    font-size: 0.85rem; 
+    color: var(--muted); 
+    margin-top: 0.15rem; }
+.indicator-main { 
+    background: var(--accent); 
+    border-color: var(--accent); 
+    color: #fff; 
+}
+.indicator-main .indicator-label { 
+    color: #cfe6e8; 
+}
+.indicator-main .indicator-value { 
+    font-size: 1.9rem; 
+}
+
+/* Panneaux, filtres */
+.panel { 
+    background: #fff; 
+    border: 1px solid var(--line); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.filters { padding: 1rem 1.1rem; overflow: visible; }
+.form-label { 
+    font-weight: 600; 
+    font-size: 0.85rem; 
+    color: var(--muted); margin-bottom: 0.3rem; 
+}
+.form-control, .form-select { 
+    border-color: var(--line); 
+    padding: 0.55rem 0.75rem; 
+}
+.form-control:focus, .form-select:focus { 
+    border-color: var(--accent); 
+    box-shadow: 0 0 0 0.2rem rgba(15, 92, 99, 0.18); 
+}
+.panel-head { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 1.1rem; 
+    border-bottom: 1px solid var(--line); 
+}
+.orders-count {
+    font-size:large; 
+    font-weight:1000; 
+    color:var(--accent);
+}
+
+/* Tableau des commandes */
+.orders-table { --bs-table-hover-bg: #f5f8fb; 
+    --bs-table-active-bg: var(--accent-soft); 
+    --bs-table-active-color: var(--ink); 
+}
+.orders-table thead th { 
+    font-size: 0.8rem; font-weight: 600; 
+    color: var(--muted); background: #f8fafc; 
+    border-bottom: 1px solid var(--line); 
+    padding: 0.7rem 1.1rem; 
+    white-space: nowrap; 
+}
+.orders-table td { 
+    padding: 0.8rem 1.1rem; 
+    border-color: var(--line); 
+}
+.orders-table tbody tr:last-child td { 
+    border-bottom: 0; 
+}
+.orders-table td:last-child { 
+    white-space: nowrap; 
+}
+
+/* Statuts */
+.badge { font-weight: 600; padding: 0.4em 0.7em; border-radius: 999px; }
+.badge.text-bg-success { 
+    background: #dcf3e6 !important; 
+    color: #14633a !important; 
+}
+.badge.text-bg-warning { 
+    background: #fdefc9 !important; 
+    color: #7a5200 !important; 
+}
+.badge.text-bg-secondary { 
+    background: #e6e9ef !important; 
+    color: #475169 !important; 
+}
+
+/* Zone de détail */
+.detail-panel { 
+    position: sticky; 
+    top: 1rem; 
+}
+.detail-empty { 
+    padding: 1.25rem; 
+}
+.detail-head { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; background: var(--accent-soft); 
+    padding: 0.9rem 1.1rem; 
+}
+#detail-content dt { 
+    color: var(--muted); 
+    font-weight: 600; 
+}
+#detail-content tfoot th { 
+    font-size: 1.05rem; 
+    border-top: 2px solid var(--ink); 
+}
+
+.btn-outline-primary { 
+    --bs-btn-color: var(--accent); 
+    --bs-btn-border-color: var(--accent); 
+    --bs-btn-hover-bg: var(--accent); 
+    --bs-btn-hover-border-color: var(--accent); 
+    --bs-btn-hover-color: #fff; 
+    --bs-btn-active-bg: var(--accent); 
+    --bs-btn-active-border-color: var(--accent); 
+    font-weight: 600; }
+.site-footer { 
+    color: var(--muted); 
+    font-size: 0.8rem; 
+    padding: 1rem 0 1.5rem; }
+:focus-visible { 
+    outline: 3px solid #f0a202; 
+    outline-offset: 2px; 
+}
+
+@media (max-width: 991.98px) { 
+    .detail-panel { position: static; } 
+}
+@media (max-width: 575.98px) {
+  .orders-table td, .orders-table thead th { padding-left: 0.75rem; padding-right: 0.75rem; }
+}
