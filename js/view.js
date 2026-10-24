@@ -1,4 +1,4 @@
- view.js : produit et met à jour l'affichage dans le DOM. Aucun fetch ici.
+ //view.js : produit et met à jour l'affichage dans le DOM. Aucun fetch ici.
 const $ = id => document.getElementById(id);
  
 const classesStatut = {
