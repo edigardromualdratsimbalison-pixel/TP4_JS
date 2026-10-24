@@ -1,0 +1,59 @@
+
+[
+  {
+    "id": 10,
+    "name": "Laptop",
+    "category": "Informatique",
+    "price": 8500,
+    "stock": 8
+  },
+  {
+    "id": 11,
+    "name": "Souris",
+    "category": "Informatique",
+    "price": 180,
+    "stock": 40
+  },
+  {
+    "id": 12,
+    "name": "Clavier mécanique",
+    "category": "Informatique",
+    "price": 650,
+    "stock": 15
+  },
+  {
+    "id": 13,
+    "name": "Casque audio",
+    "category": "Audio",
+    "price": 900,
+    "stock": 20
+  },
+  {
+    "id": 14,
+    "name": "Enceinte Bluetooth",
+    "category": "Audio",
+    "price": 550,
+    "stock": 12
+  },
+  {
+    "id": 15,
+    "name": "Bureau réglable",
+    "category": "Mobilier",
+    "price": 2800,
+    "stock": 5
+  },
+  {
+    "id": 16,
+    "name": "Chaise ergonomique",
+    "category": "Mobilier",
+    "price": 1900,
+    "stock": 7
+  },
+  {
+    "id": 17,
+    "name": "Lampe de bureau",
+    "category": "Mobilier",
+    "price": 320,
+    "stock": 25
+  }
+]
